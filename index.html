@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>IPL</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- <script>
+
+        $(function() {
+
+        var ipl = [];
+
+        $.getJSON('ipl.json', function(data) {
+            $.each(data.standings, function(i, f){
+                var tblRow ="<tr>" + "<td>" + f.Team + "</td>" + 
+                    "<td>" + f.Matches + "</td>" + "<td>" + f.Won + "</td>" + "<td>" + f.Loss + "</td>" + "<td>" + f.NRR + "</td>" + "<td>" + f.Pts + "</td>" + "<td>" + f.Last5 + "</td>" + "</tr>"
+                    $(tblRow).appendTo("#userdata tbody");
+            });
+        });
+
+        });
+
+    </script> -->
+</head>
+
+<body>
+    <nav style="background-color: #157A96">
+        <h1  style="color: white;"><center>Indian Premiere League </center></h1>
+        <ul style= "display:flex; justify-content: space-between;">
+            <li><a href="#" >MATCHES</a></li>
+            <li><a href="#" >NEWS</a></li>
+            <li><a id="line" href="./index.html" >TABLES</a></li>
+            <li><a href="#" >STATS</a></li>
+            <li><a href="#" > PLAYERS</a></li>
+        </ul>
+    </nav>
+    <table id = "userdata">
+        <thead>
+            <tr style="background-color:#157A96">
+                <th>Team</th>
+                <th>Matches</th>
+                <th>Won</th>
+                <th>Loss</th>
+                <th>NRR</th>
+                <th>Pts</th>
+                <th>Last5</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+        <!-- <tr> -->
+            <!-- <td id="t1">1  <img id="logo" src="./img/gt.jpg"  alt="logo" height="25" width="30"><div id="team">GT</div> </td>
+            
+            <td>14</td>
+            <td>10</td>
+            <td>4</td>
+            <td>+0.809</td>
+            <td>20</td>
+            <td>WWLWW</td>
+        </tr>
+        <tr>
+            <td id="t1">2 <img id="logo" src="./img/csk.jpg" alt="logo" height="25" width="30"><div id="team">CSK</div> </td>
+            <td>14</td>
+            <td>8</td>
+            <td>5</td>
+            <td>+0.652</td>
+            <td>17</td>
+            <td>WLWWN</td>
+        </tr>
+        <tr>
+            <td id="t1">3 <img id="logo" src="./img/lsg.jpg" alt="logo" height="25" width="30"><div id="team">LSG</div> </td>
+            <td>14</td>
+            <td>8</td>
+            <td>5</td>
+            <td>+0.284</td>
+            <td>17</td>
+            <td>WWWLN</td>
+        </tr>
+        <tr>
+            <td id="t1">4 <img id="logo" src="./img/mi.png" alt="logo" height="25" width="30"> <div id="team">MI</div></td>
+            <td>14</td>
+            <td>8</td>
+            <td>6</td>
+            <td>-0.044</td>
+            <td>16</td>
+            <td>WLWWL</td>
+        </tr>
+        <tr>
+            <td id="t1">5 <img id="logo" src="./img/rr.png" alt="logo" height="25" width="30"> <div id="team">RR</div></td>
+            <td>14</td>
+            <td>7</td>
+            <td>7</td>
+            <td>+0.148</td>
+            <td>14</td>
+            <td>WLWLL</td>
+        </tr>
+        <tr>
+            <td id="t1">6 <img id="logo" src="./img/rcb.png" alt="logo" height="25" width="30"> <div id="team">RCB</div> </td>
+            <td>14</td>
+            <td>7</td>
+            <td>7</td>
+            <td>+0.135</td>
+            <td>14</td>
+            <td>LWWLL</td>
+        </tr>
+        <tr>
+            <td id="t1">7 <img id="logo" src="./img/kkr.png" alt="logo" height="25" width="30"> <div id="team">KKR</div> </td>
+            <td>14</td>
+            <td>6</td>
+            <td>8</td>
+            <td>-0.239</td>
+            <td>12</td>
+            <td>LWLWW</td>
+        </tr>
+        <tr>
+            <td id="t1">8 <img id="logo" src="./img/pbks.png" alt="logo" height="25" width="30"> <div id="team">PBKS</div> </td>
+            <td>14</td>
+            <td>6</td>
+            <td>8</td>
+            <td>-0.304</td>
+            <td>12</td>
+            <td>LLWLL</td>
+        </tr>
+        <tr>
+            <td id="t1">9 <img id="logo" src="./img/dc.png" alt="logo" height="25" width="30"> <div id="team">DC</div> </td>
+            <td>14</td>
+            <td>5</td>
+            <td>9</td>
+            <td>-0.808</td>
+            <td>10</td>
+            <td>LWLLW</td>
+        </tr>
+        <tr>
+            <td id="t1">10 <img id="logo" src="./img/srh.png" alt="logo" height="25" width="30"> <div id="team">SRH</div></td>
+            <td>14</td>
+            <td>4</td>
+            <td>10</td>
+            <td>-0.590</td>
+            <td>8</td>
+            <td>LLLLW</td>
+        </tr> --> 
+
+    </table>
+    <script src ="./iplstandings.js" ></script>
+</body>
+</html>
